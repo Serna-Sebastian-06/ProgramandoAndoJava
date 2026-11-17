@@ -2,20 +2,23 @@
 
 package Guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio17 {
-    
-    public void TablaDeMultiplicar7(){
+
+    public void TablaDeMultiplicar7() {
 
         int numero = 7;
+        String mensaje = "Tabla de multiplicar del " + numero + ":\n" +
+                "------------------------------\n";
 
-        System.out.println("Tabla de multiplicar del " + numero + ":");
-        System.out.println("------------------------------");
-
-        for (int i = 1; i < 11; i++){
+        for (int i = 1; i < 11; i++) {
 
             int resultado = numero * i;
-            
-            System.out.println(numero + " x " + i + " = " + resultado);
+
+            mensaje += numero + " x " + i + " = " + resultado + "\n";
         }
+
+        JOptionPane.showMessageDialog(null, mensaje);
     }
 }

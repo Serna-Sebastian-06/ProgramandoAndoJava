@@ -2,6 +2,8 @@
 
 package Guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio16 {
     
     public void CalcularSumaImpares(){
@@ -14,6 +16,6 @@ public class Ejercicio16 {
                 suma = suma + i;
             }
         }
-        System.out.println("La suma de los número impares del 1 al 50 es: "+suma);
+        JOptionPane.showMessageDialog(null, "La suma de los número impares del 1 al 50 es: " + suma);
     }
 }

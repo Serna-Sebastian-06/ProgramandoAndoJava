@@ -1,32 +1,22 @@
 package Guia1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 public class Ejercicio10 {
     public void CalcularIMC() {
-        double peso;
-        double altura;
-
-        Scanner info = new Scanner(System.in);
-
-        System.out.println("Ingreso al ejercicio 10 de la guia 1");
-        System.out.println("Ingrese su peso en kilogramos");
-        peso = info.nextDouble();
-
-        System.out.println("Ingrese su altura en metros");
-        altura = info.nextDouble();
+        double peso = Double.parseDouble(JOptionPane.showInputDialog("Ingreso al ejercicio 10 de la guia 1\nIngrese su peso en kilogramos"));
+        double altura = Double.parseDouble(JOptionPane.showInputDialog("Ingrese su altura en metros"));
 
         double IMC = peso / (altura * altura);
 
         if (IMC < 18.5) {
-            System.out.println("Bajo peso");
-        } else if (IMC >= 18.5 && IMC <= 24.9) {
-            System.out.println("Peso normal");
-        } else if (IMC >= 25 && IMC <= 29.9) {
-            System.out.println("Sobrepeso");
+            JOptionPane.showMessageDialog(null, "Bajo peso");
+        } else if (IMC < 25) {
+            JOptionPane.showMessageDialog(null, "Peso normal");
+        } else if (IMC < 30) {
+            JOptionPane.showMessageDialog(null, "Sobrepeso");
         } else {
-            System.out.println("Obesidad");
+            JOptionPane.showMessageDialog(null, "Obesidad");
         }
-
     }
 }

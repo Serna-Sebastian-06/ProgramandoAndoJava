@@ -2,23 +2,25 @@
 
 package Guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio18 {
     
     public void TablasDeMultiplicarDelUnoAlDiez(){
 
         for (int i = 1; i < 11; i++){
             
-            System.out.println("Tabla de multiplicar del " + i + ":");
-            System.out.println("------------------------------");
+            String mensaje = "Tabla de multiplicar del " + i + ":\n" +
+                             "------------------------------\n";
 
             for (int j = 1; j < 11; j++){
 
                 int resultado = i * j;
 
-                System.out.println(i + " x " + j + " = " + resultado);
+                mensaje += i + " x " + j + " = " + resultado + "\n";
             }
 
-            System.out.println();
+            JOptionPane.showMessageDialog(null, mensaje);
 
         }
     }
