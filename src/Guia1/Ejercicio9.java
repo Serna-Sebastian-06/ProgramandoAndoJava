@@ -1,6 +1,6 @@
 package Guia1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 /* Simule un login: usuario correcto 'admin', contrasena '1234'. Si coinciden mostrar 'Bienvenido',
 si no 'Credenciales incorrectas'. Use equals().
@@ -10,33 +10,31 @@ public class Ejercicio9 {
 
     public void LOGIN() {
 
-        String User;
+        String user;
+        String paswor;
 
-        String Paswor;
+        // Ventana de entrada para el usuario
+        user = JOptionPane.showInputDialog(null, "LOGIN\n\nIngrese el usuario:");
 
-        System.out.println("LOGIN");
-
-        Scanner UC = new Scanner(System.in);
-
-        System.out.println("Ingrese el usuario");
-
-        User = UC.next();
-
-
-        System.out.println("Ingrese la contraseña");
-
-        Paswor = UC.next();
-
-        if (User.equals("admin") && Paswor.equals("1234")) {
-
-            System.out.println("Bienvenido");
-
-        }else{
-            System.out.println("Credenciales incorrectas");
+        // Validar si el usuario presionó "Cancelar" o cerró la ventana
+        if (user == null) {
+            return;
         }
 
-        UC.close();
+        // Ventana de entrada para la contraseña
+        paswor = JOptionPane.showInputDialog(null, "LOGIN\n\nIngrese la contraseña:");
 
+        // Validar si el usuario presionó "Cancelar" o cerró la ventana
+        if (paswor == null) {
+            return;
+        }
+
+        // Evaluación de credenciales con equals()
+        if (user.equals("admin") && paswor.equals("1234")) {
+            JOptionPane.showMessageDialog(null, "Bienvenido", "Acceso Exitoso", JOptionPane.INFORMATION_MESSAGE);
+        } else {
+            JOptionPane.showMessageDialog(null, "Credenciales incorrectas", "Error de Acceso", JOptionPane.ERROR_MESSAGE);
+        }
     }
 
 }
