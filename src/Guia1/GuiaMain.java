@@ -4,17 +4,6 @@ import java.util.Scanner;
 
 public class GuiaMain {
 
-     public void Ejercicio8(){
-        Ejercicio8 Facturacion =new Ejercicio8();  
-        Facturacion.CalcularValorDeCompra(); 
-     }
-
-     public void Ejercicio9(){
-        Ejercicio9 Registro =new Ejercicio9();  
-        Registro.LOGIN(); 
-     }
-    
-<<<<<<< Updated upstream
     public void Guia1(){
         System.out.println(" --- Bienvenido a la lista de ejercicios Guia 1 ---\n");
         System.out.println("1.Ejercicios Estructura Condicionales");
@@ -102,29 +91,23 @@ public class GuiaMain {
         Calcular.CalcularMayor();
 
     }
+
+     public void Ejercicio8(){
+        Ejercicio8 Facturacion =new Ejercicio8();  
+        Facturacion.CalcularValorDeCompra(); 
+     }
+
+     public void Ejercicio9(){
+        Ejercicio9 Registro =new Ejercicio9();  
+        Registro.LOGIN(); 
+     }
+     
     public void Ejercicio10 (){
         Ejercicio10 IMC = new Ejercicio10();
         IMC.CalcularIMC();
     }
 
-    public void Ejercicio16 (){
-        Ejercicio16 ImparesConFor = new Ejercicio16();
-        ImparesConFor.CalcularSumaImpares();
-    }
-
-    public void Ejercicio17 (){
-        Ejercicio17 TablaSiete = new Ejercicio17();
-        TablaSiete.TablaDeMultiplicar7();
-    }
-
-    public void Ejercicio18 (){
-        Ejercicio18 Tablas = new Ejercicio18();
-        Tablas.TablasDeMultiplicarDelUnoAlDiez();
-    }
-
-
-=======
-     public void Ejercicio11(){
+    public void Ejercicio11(){
         Ejercicio11 Numeros1a50 =new Ejercicio11();  
         Numeros1a50.numeros(); 
      }
@@ -148,5 +131,19 @@ public class GuiaMain {
         Ejercicio15 SumaDel1Al100 =new Ejercicio15();  
         SumaDel1Al100.Suma1a100(); 
      }
->>>>>>> Stashed changes
+
+    public void Ejercicio16 (){
+        Ejercicio16 ImparesConFor = new Ejercicio16();
+        ImparesConFor.CalcularSumaImpares();
+    }
+
+    public void Ejercicio17 (){
+        Ejercicio17 TablaSiete = new Ejercicio17();
+        TablaSiete.TablaDeMultiplicar7();
+    }
+
+    public void Ejercicio18 (){
+        Ejercicio18 Tablas = new Ejercicio18();
+        Tablas.TablasDeMultiplicarDelUnoAlDiez();
+    }
 }
