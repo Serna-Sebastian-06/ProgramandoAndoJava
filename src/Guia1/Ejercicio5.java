@@ -1,24 +1,21 @@
 package Guia1;
 
-import java.util.Scanner;
+import javax.swing.JOptionPane;
 
 // Pida un anio y determine si es bisiesto. Reglas: divisible entre 4, no entre 100, excepto si es divisible entre 400
 
 public class Ejercicio5 {
-    
 
     public void CalcularAnioBisiesto() {
 
-        Scanner ScannerBisiesto = new Scanner(System.in);
+        int anio = Integer.parseInt(JOptionPane.showInputDialog(
+                "Ingrese un año para ver si es bisiesto: "));
 
-        System.out.println("Ingrese un año para ver si es bisiesto: ");
-        
-        int anio = ScannerBisiesto.nextInt();
+        if (anio % 4 == 0 && anio % 100 != 0) {
+            JOptionPane.showMessageDialog(null, "El año ingredaso es bisiesto: " + anio);
 
-        if (anio %4 == 0 && anio % 100 !=0){
-            System.out.println("El año ingredaso es bisiesto: "+anio);
-        }else{
-            System.out.println("El año no es bisiesto: "+anio);
+        } else {
+            JOptionPane.showMessageDialog(null, "El año no es bisiesto: " + anio);
         }
     }
 }
