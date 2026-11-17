@@ -3,7 +3,18 @@ package Guia1;
 import java.util.Scanner;
 
 public class GuiaMain {
+
+     public void Ejercicio8(){
+        Ejercicio8 Facturacion =new Ejercicio8();  
+        Facturacion.CalcularValorDeCompra(); 
+     }
+
+     public void Ejercicio9(){
+        Ejercicio9 Registro =new Ejercicio9();  
+        Registro.LOGIN(); 
+     }
     
+<<<<<<< Updated upstream
     public void Guia1(){
         System.out.println(" --- Bienvenido a la lista de ejercicios Guia 1 ---\n");
         System.out.println("1.Ejercicios Estructura Condicionales");
@@ -112,4 +123,30 @@ public class GuiaMain {
     }
 
 
+=======
+     public void Ejercicio11(){
+        Ejercicio11 Numeros1a50 =new Ejercicio11();  
+        Numeros1a50.numeros(); 
+     }
+
+     public void Ejercicio12(){
+        Ejercicio12 Numeros50a1 =new Ejercicio12();  
+        Numeros50a1.numeros50a1(); 
+     }
+
+     public void Ejercicio13(){
+        Ejercicio13 Paresen100 =new Ejercicio13();  
+        Paresen100.Pares100(); 
+     }
+
+     public void Ejercicio14(){
+        Ejercicio14 Impares1a100 =new Ejercicio14();  
+        Impares1a100.NumerosImparesWH(); 
+     }
+
+     public void Ejercicio15(){
+        Ejercicio15 SumaDel1Al100 =new Ejercicio15();  
+        SumaDel1Al100.Suma1a100(); 
+     }
+>>>>>>> Stashed changes
 }
