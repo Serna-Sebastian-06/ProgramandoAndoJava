@@ -1,14 +1,16 @@
 package Guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio21 {
     public static void main(String[] args) {
-        int numero = 7;
+        int numero = 5; // Cambia este valor para probar otros números
         long factorial = 1;
 
         for (int i = 1; i <= numero; i++) {
-            factorial *= i; 
+            factorial *= i;
         }
 
-        System.out.println("El factorial de " + numero + " es: " + factorial);
+        JOptionPane.showMessageDialog(null, "El factorial de " + numero + " es: " + factorial);
     }
 }

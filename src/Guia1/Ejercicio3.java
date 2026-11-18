@@ -1,21 +1,18 @@
 package Guia1;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Ejercicio3 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Ingrese su edad: ");
-        int edad = scanner.nextInt();
+        String entrada = JOptionPane.showInputDialog(null, "Ingrese su edad:");
+        int edad = Integer.parseInt(entrada);
 
         if (edad < 0) {
-            System.out.println("Edad invalida");
+            JOptionPane.showMessageDialog(null, "Edad invalida");
         } else if (edad >= 18) {
-            System.out.println("Puede ingresar");
+            JOptionPane.showMessageDialog(null, "Puede ingresar");
         } else {
-            System.out.println("Acceso denegado");
+            JOptionPane.showMessageDialog(null, "Acceso denegado");
         }
-        
-        scanner.close();
     }
 }

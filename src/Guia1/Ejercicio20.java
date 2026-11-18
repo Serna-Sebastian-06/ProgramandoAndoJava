@@ -1,13 +1,17 @@
 package Guia1;
 
+import javax.swing.JOptionPane;
+
 public class Ejercicio20 {
     public static void main(String[] args) {
-        System.out.println("Numeros del 1 al 100 divisibles entre 3 y 5:");
-        
+        StringBuilder resultado = new StringBuilder("Numeros del 1 al 100 divisibles entre 3 y 5:\n");
+
         for (int i = 1; i <= 100; i++) {
             if (i % 3 == 0 && i % 5 == 0) {
-                System.out.println(i);
+                resultado.append(i).append("\n");
             }
         }
+
+        JOptionPane.showMessageDialog(null, resultado.toString());
     }
 }

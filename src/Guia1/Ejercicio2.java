@@ -1,19 +1,16 @@
 package Guia1;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Ejercicio2 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Ingrese un numero entero: ");
-        int numero = scanner.nextInt();
+        String entrada = JOptionPane.showInputDialog(null, "Ingrese un numero entero:");
+        int numero = Integer.parseInt(entrada);
 
         if (numero % 2 == 0) {
-            System.out.println("El numero es Par");
+            JOptionPane.showMessageDialog(null, "El numero " + numero + " es Par");
         } else {
-            System.out.println("El numero es Impar");
+            JOptionPane.showMessageDialog(null, "El numero " + numero + " es Impar");
         }
-        
-        scanner.close();
     }
 }

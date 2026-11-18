@@ -1,21 +1,18 @@
 package Guia1;
-import java.util.Scanner;
+
+import javax.swing.JOptionPane;
 
 public class Ejercicio1 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        
-        System.out.print("Ingrese un numero entero: ");
-        int numero = scanner.nextInt();
+        String entrada = JOptionPane.showInputDialog(null, "Ingrese un numero entero:");
+        int numero = Integer.parseInt(entrada);
 
         if (numero > 0) {
-            System.out.println("Positivo");
+            JOptionPane.showMessageDialog(null, "Positivo");
         } else if (numero < 0) {
-            System.out.println("Negativo");
+            JOptionPane.showMessageDialog(null, "Negativo");
         } else {
-            System.out.println("Cero");
+            JOptionPane.showMessageDialog(null, "Cero");
         }
-        
-        scanner.close();
     }
 }
