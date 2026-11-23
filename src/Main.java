@@ -1,8 +1,9 @@
 
-
 import javax.swing.JOptionPane;
+import ConexionDb.InicializarDB;
 
 import Guia1.GuiaMain;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -15,14 +16,18 @@ public class Main {
         int opcion = Integer.parseInt(
                 JOptionPane.showInputDialog(null, "Bienvenido a Programando Ando \n" +
                         "Aquí Aprenderas Java\n" + "Ingrese una opción para el programa: \n" +
-                        "1. Ejercicio Guía 1 \n"));
-
-        
+                        "1. Ejercicio Guía 1 \n" + 
+                        "3. Base de datos"));
 
         if (opcion == 1) {
             System.out.println("\nIngresando a Ejercicio Guía 1\n");
             GuiaMain Guia1 = new GuiaMain();
             Guia1.Guia1();
+        }
+
+        if (opcion == 3) {
+            System.out.println("\nIngresando a Base de datos...\n");
+            InicializarDB.crearTablas();
         }
 
     }
