@@ -1,3 +1,7 @@
-{
-  "java.project.referencedLibraries": ["libs/**/*.jar"]
+
 }
+   "java.project.referencedLibraries": [
+       "src/libs/**/*.jar"
+   ]
+}
+
