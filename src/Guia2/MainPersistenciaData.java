@@ -2,7 +2,6 @@ package Guia2;
 
 import javax.swing.JOptionPane;
 
-import ConexionDb.ConexionDB;
 import ConexionDb.InicializarDB;
 
 public class MainPersistenciaData {
@@ -12,8 +11,10 @@ public class MainPersistenciaData {
                 "2.Actividad 3.4 Creando Sistema Con Login"));
 
         if (opcion == 1) {
-            ConexionDB crearDb = new ConexionDB();
-            crearDb.getConexion();
+            InicializarDB crearTabDb = new InicializarDB();
+            crearTabDb.crearTablas();
         }
+
+        
     }
 }

@@ -1,4 +1,4 @@
-package models;
+package Guia2.CatalogoDeVideojuegos.models;
 
 public class Usuario {
     private int id;

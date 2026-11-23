@@ -1,4 +1,4 @@
-package models;
+package Guia2.CatalogoDeVideojuegos.models;
 
 public class Videojuego {
     private int id;
