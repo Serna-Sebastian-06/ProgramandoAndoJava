@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio26 {
-    public static void main(String[] args) {
+    public void ContarNumeroEnArreglo() {
         String num = JOptionPane.showInputDialog("Ingrese un número entre 1 y 50: ");
         int numero = Integer.parseInt(num);
 

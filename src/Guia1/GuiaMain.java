@@ -71,7 +71,14 @@ public class GuiaMain {
                     "19. Contar cuantos numeros del 1 al 200 son multiplos de 10 usando un ciclo for.\n" +
                     "20. Mostrar los numeros del 1 al 100 que sean divisibles entre 3 Y entre 5 simultaneamente.\n" +
                     "21. Calcular el factorial de un numero almacenado en una variable usando un ciclo for.\n" +
-                    "22. Declarar un arreglo de 10 numeros e imprimir cada elemento usando un ciclo for.\n\n" +
+                    "22. Declarar un arreglo de 10 numeros e imprimir cada elemento usando un ciclo for.\n" +
+                    "23. Calcular la suma de todos los elementos de un arreglo usando un ciclo for.\n" +
+                    "24. Encontrar el numero mayor dentro de un arreglo usando un ciclo for.\n" +
+                    "25. Encontrar el numero menor dentro de un arreglo usando un ciclo for.\n" +
+                    "26. Contar cuantas veces aparece un numero especifico dentro de un arreglo.\n" +
+                    "27. Imprimir un cuadrado de 6x6 asteriscos usando ciclos for anidados.\n" +
+                    "28. Mostrar los primeros 20 numeros y su cubo (n^3) usando un ciclo for.\n" +
+                    "29. Recorrer una cadena de texto e imprimir cada caracter en una linea usando un ciclo for.\n\n" +
                     "Ingrese una opcion de Ejercicio:"));
 
             if (opcion == 11) {
@@ -109,6 +116,27 @@ public class GuiaMain {
             }
             if (opcion == 22) {
                 Ejercicio22();
+            }
+            if (opcion == 23) {
+                Ejercicio23();
+            }
+            if (opcion == 24) {
+                Ejercicio24();
+            }
+            if (opcion == 25) {
+                Ejercicio25();
+            }
+            if (opcion == 26) {
+                Ejercicio26();
+            }
+            if (opcion == 27) {
+                Ejercicio27();
+            }
+            if (opcion == 28) {
+                Ejercicio28();
+            }
+            if (opcion == 29) {
+                Ejercicio29();
             }
 
         } else {
@@ -224,5 +252,40 @@ public class GuiaMain {
     public void Ejercicio22() {
         Ejercicio22 arreglo = new Ejercicio22();
         arreglo.mostrarArreglo();
+    }
+
+    public void Ejercicio23() {
+        Ejercicio23 SumaArreglo = new Ejercicio23();
+        SumaArreglo.SumarElementosArreglo();
+    }
+
+    public void Ejercicio24() {
+        Ejercicio24 MayorArreglo = new Ejercicio24();
+        MayorArreglo.EncontrarMayorEnArreglo();
+    }
+
+    public void Ejercicio25() {
+        Ejercicio25 MenorArreglo = new Ejercicio25();
+        MenorArreglo.EncontrarMenorEnArreglo();
+    }
+
+    public void Ejercicio26() {
+        Ejercicio26 ContarNumero = new Ejercicio26();
+        ContarNumero.ContarNumeroEnArreglo();
+    }
+
+    public void Ejercicio27() {
+        Ejercicio27 CuadradoAsteriscos = new Ejercicio27();
+        CuadradoAsteriscos.ImprimirCuadradoDeAsteriscos();
+    }
+
+    public void Ejercicio28() {
+        Ejercicio28 CuboNumeros = new Ejercicio28();
+        CuboNumeros.MostrarCuboDeNumeros();
+    }
+
+    public void Ejercicio29() {
+        Ejercicio29 RecorrerCadena = new Ejercicio29();
+        RecorrerCadena.RecorrerCadenaDeTexto();
     }
 }

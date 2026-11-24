@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio25 {
-    public static void main(String[] args) {
+    public void EncontrarMenorEnArreglo() {
         int arreglo[] = { 11, 22, 33, 44, 55, 66, 77, 88, 9, 100 };
 
         int menor = arreglo[0];

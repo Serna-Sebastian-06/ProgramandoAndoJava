@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio29 {
-    public static void main(String[] args) {
+    public void RecorrerCadenaDeTexto() {
         String texto = "Algunas noches me cuesta mucho conciliar el sueño, mis pensamientos me atormentan.";
 
         String acum = "";
