@@ -1,4 +1,4 @@
-package ProyectoCatalogoDeVideojuegos.models;
+package Guia2.CatalogoDeVideojuegos.models;
 
 import ConexionDb.ConexionDB;
 import java.sql.Connection;
