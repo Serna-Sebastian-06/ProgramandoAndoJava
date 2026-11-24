@@ -2,7 +2,6 @@ package Guia2.CatalogoDeVideojuegos.models;
 
 import ConexionDb.ConexionDB;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
 
@@ -23,20 +22,6 @@ public class UsuarioTabla {
             System.out.println("Tabla 'usuarios' verificada/creada correctamente.");
         } catch (SQLException e) {
             System.err.println("Error al crear la tabla 'usuarios': " + e.getMessage());
-        }
-    }
-
-    public static void insertarDatosIniciales() {
-        String sql = "INSERT OR IGNORE INTO usuarios (username, password) VALUES (?, ?)";
-
-        try (Connection conn = ConexionDB.getConexion();
-                PreparedStatement pstmt = conn.prepareStatement(sql)) {
-            pstmt.setString(1, "admin");
-            pstmt.setString(2, "1234");
-            pstmt.executeUpdate();
-            System.out.println("Datos iniciales de 'usuarios' verificados.");
-        } catch (SQLException e) {
-            System.err.println("Error al insertar datos iniciales en 'usuarios': " + e.getMessage());
         }
     }
 }
