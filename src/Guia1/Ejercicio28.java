@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio28 {
-    public static void main(String[] args) {
+    public void MostrarCuboDeNumeros() {
         int num = 20;
         String mensaje = "Números del 1 al 20, con su Cubo((n^3): \n";
 

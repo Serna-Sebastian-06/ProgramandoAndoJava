@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio27 {
-    public static void main(String[] args) {
+    public void ImprimirCuadradoDeAsteriscos() {
         String caracter = "* ";
         int filas = 6;
         int columnas = 6;

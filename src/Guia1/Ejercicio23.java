@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio23 {
-    public static void main(String[] args) {
+    public void SumarElementosArreglo() {
         int acum = 0;
 
         int arreglo[] = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };

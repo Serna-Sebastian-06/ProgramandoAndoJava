@@ -56,6 +56,13 @@ public class GuiaMain {
                     "16. Calcular la suma de los numeros impares del 1 al 50 usando un ciclo for\n" +
                     "17. Mostrar la tabla de multiplicar del numero 7 usando un ciclo for\n" +
                     "18. Mostrar las tablas de multiplicar del 1 al 10 usando ciclos for anidados\n\n" +
+                    "23. Calcular la suma de todos los elementos de un arreglo usando un ciclo for.\n\n" +
+                    "24. Encontrar el numero mayor dentro de un arreglo usando un ciclo for.\n\n" +
+                    "25. Encontrar el numero menor dentro de un arreglo usando un ciclo for.\n\n" +
+                    "26. Contar cuantas veces aparece un numero especifico dentro de un arreglo.\n\n" +
+                    "27. Imprimir un cuadrado de 6x6 asteriscos usando ciclos for anidados.\n\n" +
+                    "28. Mostrar los primeros 20 numeros y su cubo (n^3) usando un ciclo for.\n\n" +
+                    "29. Recorrer una cadena de texto e imprimir cada caracter en una linea usando un ciclo for.\n\n" +
                     "Ingrese una opcion de Ejercicio:"));
 
             if (opcion == 11) {
@@ -81,6 +88,27 @@ public class GuiaMain {
             }
             if (opcion == 18) {
                 Ejercicio18();
+            }
+            if (opcion == 23) {
+                Ejercicio23();
+            }
+            if (opcion == 24) {
+                Ejercicio24();
+            }
+            if (opcion == 25) {
+                Ejercicio25();
+            }
+            if (opcion == 26) {
+                Ejercicio26();
+            }
+            if (opcion == 27) {
+                Ejercicio27();
+            }
+            if (opcion == 28) {
+                Ejercicio28();
+            }
+            if (opcion == 29) {
+                Ejercicio29();
             }
 
         } else {
@@ -163,4 +191,38 @@ public class GuiaMain {
         Tablas.TablasDeMultiplicarDelUnoAlDiez();
     }
 
+    public void Ejercicio23() {
+        Ejercicio23 SumaArreglo = new Ejercicio23();
+        SumaArreglo.SumarElementosArreglo();
+    }
+
+    public void Ejercicio24() {
+        Ejercicio24 MayorArreglo = new Ejercicio24();
+        MayorArreglo.EncontrarMayorEnArreglo();
+    }
+
+    public void Ejercicio25() {
+        Ejercicio25 MenorArreglo = new Ejercicio25();
+        MenorArreglo.EncontrarMenorEnArreglo();
+    }
+
+    public void Ejercicio26() {
+        Ejercicio26 ContarNumero = new Ejercicio26();
+        ContarNumero.ContarNumeroEnArreglo();
+    }
+
+    public void Ejercicio27() {
+        Ejercicio27 CuadradoAsteriscos = new Ejercicio27();
+        CuadradoAsteriscos.ImprimirCuadradoDeAsteriscos();
+    }
+
+    public void Ejercicio28() {
+        Ejercicio28 CuboNumeros = new Ejercicio28();
+        CuboNumeros.MostrarCuboDeNumeros();
+    }
+
+    public void Ejercicio29() {
+        Ejercicio29 RecorrerCadena = new Ejercicio29();
+        RecorrerCadena.RecorrerCadenaDeTexto();
+    }
 }
