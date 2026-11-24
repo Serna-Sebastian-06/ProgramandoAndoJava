@@ -2,6 +2,9 @@
 import javax.swing.JOptionPane;
 import ConexionDb.InicializarDB;
 
+import ProyectoCatalogoDeVideojuegos.models.UsuarioTabla;
+import ProyectoCatalogoDeVideojuegos.models.VideojuegoTabla;
+
 import Guia1.GuiaMain;
 
 public class Main {
@@ -16,7 +19,7 @@ public class Main {
         int opcion = Integer.parseInt(
                 JOptionPane.showInputDialog(null, "Bienvenido a Programando Ando \n" +
                         "Aquí Aprenderas Java\n" + "Ingrese una opción para el programa: \n" +
-                        "1. Ejercicio Guía 1 \n" + 
+                        "1. Ejercicio Guía 1 \n" +
                         "3. Base de datos"));
 
         if (opcion == 1) {
@@ -28,6 +31,14 @@ public class Main {
         if (opcion == 3) {
             System.out.println("\nIngresando a Base de datos...\n");
             InicializarDB.crearTablas();
+
+            // Creación de esquemas
+            UsuarioTabla.crearTabla();
+            VideojuegoTabla.crearTabla();
+
+            // Carga inicial de prueba
+            UsuarioTabla.insertarDatosIniciales();
+            VideojuegoTabla.insertarDatosIniciales();
         }
 
     }

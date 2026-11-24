@@ -1,4 +1,4 @@
-package models;
+package ProyectoCatalogoDeVideojuegos.models;
 
 public class Videojuego {
     private int id;
