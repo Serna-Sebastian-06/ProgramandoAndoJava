@@ -7,13 +7,16 @@ public class GuiaMain {
     public void Guia1() {
 
         int opcion = Integer.parseInt(JOptionPane.showInputDialog("Bienvenido a la lista de ejercicios Guia 1\n" +
-                "1.Ejercicios Estructura Condicionales\n" +
-                "2.Ejercicios Practico: Ciclos for, while y areglos\n" +
+                "1. Ejercicios Estructura Condicionales\n" +
+                "2. Ejercicios Practico: Ciclos for, while y arreglos\n" +
                 "Ingrese una opcion de Ejercicio:"));
 
         if (opcion == 1) {
-            opcion = Integer.parseInt(JOptionPane.showInputDialog("1.Ejercicios Estructura Condicionales\n\n" +
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("1. Ejercicios Estructura Condicionales\n\n" +
                     "Lista de Ejercicios\n\n" +
+                    "1. Pida un numero entero al usuario e imprima si es Positivo, Negativo o Cero. Use if - else if - else\n" +
+                    "2. Solicite un numero entero y determine si es Par o Impar. Use el operador modulo (%).\n" +
+                    "3. Pida la edad del usuario. Si es >= 18 mostrar 'Puede ingresar', si es menor 'Acceso denegado', si es negativa 'Edad invalida'.\n" +
                     "4. Solicite dos numeros y un operador (+, -, *, /). Realice la operacion con switch. Valide la division entre cero.\n" +
                     "5. Pida un anio y determine si es bisiesto. Reglas: divisible entre 4, no entre 100, excepto si es divisible entre 400\n" +
                     "6. Pida una nota entre 0 y 100 y clasifiquela: 90-100 Excelente, 80-89 Bueno, 70-79 Aceptable, 60-69 Insuficiente, <60 Reprobado. Valide el rango.\n" +
@@ -23,6 +26,15 @@ public class GuiaMain {
                     "10. Solicite peso (kg) y altura (m). Calcule IMC = peso / (altura * altura). Clasifique: <18.5 Bajo peso, 18.5-24.9 Normal, 25-29.9 Sobrepeso, >=30 Obesidad.\n\n" +
                     "Ingrese una opcion de Ejercicio:"));
 
+            if (opcion == 1) {
+                Ejercicio1();
+            }
+            if (opcion == 2) {
+                Ejercicio2();
+            }
+            if (opcion == 3) {
+                Ejercicio3();
+            }
             if (opcion == 4) {
                 Ejercicio4();
             }
@@ -46,7 +58,7 @@ public class GuiaMain {
             }
 
         } else if (opcion == 2) {
-            opcion = Integer.parseInt(JOptionPane.showInputDialog("2.Ejercicios Practico: Ciclos for, while y areglos.\n\n" +
+            opcion = Integer.parseInt(JOptionPane.showInputDialog("2. Ejercicios Practico: Ciclos for, while y arreglos.\n\n" +
                     "Lista de Ejercicios\n\n" +
                     "11. Imprimir numeros del 1 al 50.\n" +
                     "12. Imprimir numeros del 50 al 1.\n" +
@@ -55,7 +67,11 @@ public class GuiaMain {
                     "15. Calcular la suma del 1 al 100.\n" +
                     "16. Calcular la suma de los numeros impares del 1 al 50 usando un ciclo for\n" +
                     "17. Mostrar la tabla de multiplicar del numero 7 usando un ciclo for\n" +
-                    "18. Mostrar las tablas de multiplicar del 1 al 10 usando ciclos for anidados\n\n" +
+                    "18. Mostrar las tablas de multiplicar del 1 al 10 usando ciclos for anidados\n" +
+                    "19. Contar cuantos numeros del 1 al 200 son multiplos de 10 usando un ciclo for.\n" +
+                    "20. Mostrar los numeros del 1 al 100 que sean divisibles entre 3 Y entre 5 simultaneamente.\n" +
+                    "21. Calcular el factorial de un numero almacenado en una variable usando un ciclo for.\n" +
+                    "22. Declarar un arreglo de 10 numeros e imprimir cada elemento usando un ciclo for.\n\n" +
                     "Ingrese una opcion de Ejercicio:"));
 
             if (opcion == 11) {
@@ -82,10 +98,37 @@ public class GuiaMain {
             if (opcion == 18) {
                 Ejercicio18();
             }
+            if (opcion == 19) {
+                Ejercicio19();
+            }
+            if (opcion == 20) {
+                Ejercicio20();
+            }
+            if (opcion == 21) {
+                Ejercicio21();
+            }
+            if (opcion == 22) {
+                Ejercicio22();
+            }
 
         } else {
             JOptionPane.showMessageDialog(null, "Ingreso una opcion invalida");
         }
+    }
+
+    public void Ejercicio1() {
+        Ejercicio1 signo = new Ejercicio1();
+        signo.determinarSigno();
+    }
+
+    public void Ejercicio2() {
+        Ejercicio2 parImpar = new Ejercicio2();
+        parImpar.parOImpar();
+    }
+
+    public void Ejercicio3() {
+        Ejercicio3 edad = new Ejercicio3();
+        edad.validarEdad();
     }
 
     public void Ejercicio4() {
@@ -163,4 +206,23 @@ public class GuiaMain {
         Tablas.TablasDeMultiplicarDelUnoAlDiez();
     }
 
+    public void Ejercicio19() {
+        Ejercicio19 multiplos = new Ejercicio19();
+        multiplos.contarMultiplosDeDiez();
+    }
+
+    public void Ejercicio20() {
+        Ejercicio20 divisibles = new Ejercicio20();
+        divisibles.divisiblesTresYCinco();
+    }
+
+    public void Ejercicio21() {
+        Ejercicio21 factorial = new Ejercicio21();
+        factorial.calcularFactorial();
+    }
+
+    public void Ejercicio22() {
+        Ejercicio22 arreglo = new Ejercicio22();
+        arreglo.mostrarArreglo();
+    }
 }
