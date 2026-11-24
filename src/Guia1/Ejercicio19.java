@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio19 {
-    public static void main(String[] args) {
+    public void contarMultiplosDeDiez() {
         int contador = 0;
 
         for (int i = 1; i <= 200; i++) {
