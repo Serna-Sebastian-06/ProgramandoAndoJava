@@ -2,6 +2,8 @@ package Guia2.CatalogoDeVideojuegos.views;
 
 import javax.swing.JOptionPane;
 import Guia2.CatalogoDeVideojuegos.controller.loginController;
+import Guia2.CatalogoDeVideojuegos.dao.VideojuegoDAO;
+import Guia2.CatalogoDeVideojuegos.models.Usuario;
 
 public class LoginView {
 
@@ -36,9 +38,16 @@ public class LoginView {
                         "¡Bienvenido, " + user.trim() + "!",
                         "Acceso Concedido", JOptionPane.INFORMATION_MESSAGE);
 
-                MenuPrincipalView menu = new MenuPrincipalView();
-                menu.mostrarMenu(user.trim());
-                return;
+                VideojuegoDAO dao = new VideojuegoDAO();
+                dao.crearTablaYDatosIniciales();
+
+                MenuPrincipalView menu = new MenuPrincipalView(dao);
+                Usuario usuarioActivo = new Usuario(user.trim(), "");
+
+                boolean volverALogin = menu.mostrar(usuarioActivo);
+                if (!volverALogin) {
+                    return;
+                }
             } else {
                 intentos++;
                 int restantes = MAX_INTENTOS - intentos;
