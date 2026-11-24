@@ -1,6 +1,10 @@
 {
   "java.project.referencedLibraries": [
+<<<<<<< HEAD
     "libs/**/*.jar",
     "src/libs/sqlite-jdbc-3.54.1.0.jar"
+=======
+    "src/libs/**/*.jar"
+>>>>>>> 84c4d2ec69998d4c2310e3d00a96db87d8d69383
   ]
 }
