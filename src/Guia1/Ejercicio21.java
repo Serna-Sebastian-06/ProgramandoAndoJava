@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio21 {
-    public static void main(String[] args) {
+    public void calcularFactorial() {
         int numero = 5; // Cambia este valor para probar otros números
         long factorial = 1;
 

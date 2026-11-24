@@ -3,14 +3,14 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio2 {
-    public static void main(String[] args) {
-        String entrada = JOptionPane.showInputDialog(null, "Ingrese un numero entero:");
+    public void parOImpar() {
+        String entrada = JOptionPane.showInputDialog(null, "Ingrese un número entero:");
         int numero = Integer.parseInt(entrada);
 
         if (numero % 2 == 0) {
-            JOptionPane.showMessageDialog(null, "El numero " + numero + " es Par");
+            JOptionPane.showMessageDialog(null, "El número " + numero + " es Par");
         } else {
-            JOptionPane.showMessageDialog(null, "El numero " + numero + " es Impar");
+            JOptionPane.showMessageDialog(null, "El número " + numero + " es Impar");
         }
     }
 }

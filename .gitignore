@@ -1,1 +1,32 @@
+# Archivos compilados de Java
 *.class
+*.jar
+*.war
+*.ear
+bin/
+out/
+target/
+
+# Excepción: mantener el driver de SQLite en el repositorio
+!libs/*.jar
+!src/libs/*.jar
+
+# Base de datos SQLite local y archivos temporales de bloqueo
+*.db
+*.sqlite
+*.sqlite3
+*.db-journal
+*.db-wal
+*.db-shm
+
+# Logs de fallos de la máquina virtual de Java (JVM)
+hs_err_pid*
+replay_pid*
+
+# VS Code: ignora cachés locales pero conserva la ruta de librerías del equipo
+.vscode/*
+!.vscode/settings.json
+
+# Archivos temporales del sistema (Linux)
+*~
+.directory

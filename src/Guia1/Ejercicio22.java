@@ -3,7 +3,7 @@ package Guia1;
 import javax.swing.JOptionPane;
 
 public class Ejercicio22 {
-    public static void main(String[] args) {
+    public void mostrarArreglo() {
         int[] numeros = {10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
         StringBuilder salida = new StringBuilder("Elementos del arreglo:\n");
 
